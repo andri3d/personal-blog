@@ -1,4 +1,4 @@
-# personal-blog
+# Personal-Blog
 Andri3D Personal Blog
 
-## The Source Data For My Personal Blog
+## Source data for my personal blog
