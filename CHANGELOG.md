@@ -1,7 +1,10 @@
-### 1.1.0 - 08/29/2015
+### 2.0.0 - 06/13/2015
 
-- Enabled preloader by default and styled it
+- Rebuilt theme from ground-up to be compatible with Sequence.js 2
 
-### 1.0.0 - 08/28/2015
+### 1.3.0 - 03/11/2013
 
-- Initial release compatible with Sequence.js 2
+- Updated to work with Sequence.js 0.0.9
+- Added height: 100% and width: 100% to the top level UL to allow for detection of mouseenter/mouseleave
+- The pagination will now move up a little when hovered over rather than fade in
+- Added transition-property to animated elements

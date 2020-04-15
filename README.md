@@ -1,10 +1,10 @@
-# Mono - Sequence.js Theme
+# Modern Slide In - Sequence.js Theme
 
-> A minimal but colorful slider for showcasing one large product per slide
+> A minimalist theme for showcasing products. Images and text become opaque as they slide in. Each pagination link is a preview of a steps product image.
 
 This theme is powered by [Sequence.js](http://sequencejs.com/) - The responsive CSS animation framework for creating unique sliders, presentations, banners, and other step-based applications.
 
-Theme URL: [http://sequencejs.com/themes/mono/](http://sequencejs.com/themes/mono/)
+Theme URL: [http://sequencejs.com/themes/modern-slide-in/](http://sequencejs.com/themes/modern-slide-in/)
 
 
 Author: [Ian Lunn](http://ianlunn.co.uk/) - [GitHub](https://github.com/IanLunn) | [Twitter](https://twitter.com/IanLunn) | [Email](mailto:info@sequencejs.com)
@@ -14,28 +14,36 @@ Author: [Ian Lunn](http://ianlunn.co.uk/) - [GitHub](https://github.com/IanLunn)
 To add a Sequence.js theme to your web page, complete the following:
 
 1. Download and unzip your theme
-2. Move the `mono` folder to the same folder as the page you'd like the Sequence.js theme to appear on
+2. Move the `modern-slide-in` folder to the same folder as the page you'd like the Sequence.js theme to appear on
 3. Add the theme's stylesheet within the `<head></head>` tags on your page, below existing stylesheets. For example:
 ```html
-<link rel="stylesheet" href="mono/css/sequence-theme.mono.css" />
+<link rel="stylesheet" href="modern-slide-in/css/sequence-theme.modern-slide-in.css" />
 ```
 
-4. From `mono/index.html`, copy everything inside the `<body></body>` tags, then paste into the page you'd like the theme to appear on.
-5. From `mono/index.html`, copy any `<script></script>` elements found toward the bottom of the page and paste just before the closing `</body>` tag. This should include a reference to the Sequence.js library, its third-party dependencies, and the theme's options, for example:
+4. From `modern-slide-in/index.html`, copy everything inside the `<body></body>` tags, then paste into the page you'd like the theme to appear on.
+5. From `modern-slide-in/index.html`, copy any `<script></script>` elements found toward the bottom of the page and paste just before the closing `</body>` tag. This should include a reference to the Sequence.js library, its third-party dependencies, and the theme's options, for example:
 ```html
-<script src="mono/scripts/imagesloaded.pkgd.min.js"></script>
-<script src="mono/scripts/hammer.min.js"></script>
-<script src="mono/scripts/sequence.min.js"></script>
-<script src="mono/scripts/sequence-theme.mono.js"></script>
+<script src="modern-slide-in/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="modern-slide-in/scripts/hammer.min.js"></script>
+<script src="modern-slide-in/scripts/sequence.min.js"></script>
+<script src="modern-slide-in/scripts/sequence-theme.modern-slide-in.js"></script>
 ```
 
 6. Save your file and view in the browser. You're done!
 
+7. *Optional*: Internet Explorer 8 will show the mobile layout regardless of browser width. If you'd like to fix that, add a reference to [respond.js](https://github.com/scottjehl/Respond) after all references to CSS. This will add media query support to older browsers. For example:
+
+  ```javascript
+  <!--[if lt IE 9]>
+    <script src="modern-slide-in/scripts/respond.min.js"></script>
+  <![endif]-->
+  ```
+
 ### Customizing a Theme
 
-To customize how a theme behaves, its Sequence.js options can be changed in `mono/scripts/sequence-theme.mono.js`. See Options in the [documentation](http://www.sequencejs.com/documentation/#options).
+To customize how a theme behaves, its Sequence.js options can be changed in `modern-slide-in/scripts/sequence-theme.modern-slide-in.js`. See Options in the [documentation](http://www.sequencejs.com/documentation/#options).
 
-To customize how a theme looks and how its step's transition, refer to the theme's stylesheet: `mono/css/sequence-theme.mono.css`.
+To customize how a theme looks and how its step's transition, refer to the theme's stylesheet: `modern-slide-in/css/sequence-theme.modern-slide-in.css`.
 
 It is recommended to read [Setting Up a Theme](http://www.sequencejs.com/documentation/#setting-up-a-theme) in the documentation for an overview of how transitions are applied to Sequence.js steps.
 
@@ -59,9 +67,9 @@ This command will start a development environment with the following automated t
 - Opens your browser and navigates to `http://localhost:8000/`
 - Sets up a *watch* task to run the following sub-tasks:
   - Update the version number of the following files when changed in `package.json`:
-    - `scripts/sequence-theme.mono.js`
-    - `scss/sequence-theme.mono.scss`
-    - `css/sequence-theme.mono.css`
+    - `scripts/sequence-theme.modern-slide-in.js`
+    - `scss/sequence-theme.modern-slide-in.scss`
+    - `css/sequence-theme.modern-slide-in.css`
     - `bower.json`
   - Process any `.scss` files found in the `scss` directory, autoprefix them and then copy to `css` and minify
   - Refresh the browser when any changes are made in HTML, JS, CSS, or SCSS files
